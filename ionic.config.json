@@ -1,0 +1,7 @@
+{
+  "name": "InmoMobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
