@@ -9,11 +9,11 @@
             <swiper-slide>
                <div class="relative">
                   <div class="backdrop-opacity-10 backdrop-invert bg-black/40">
-                     <img class="w-full brightness-50"
-                        src="@/assets/img/integral/parque-prado/4.webp" />
+                     <img class="w-full brightness-50" src="@/assets/img/integral/parque-prado/4.webp" />
                      <h3 class="absolute text-2xl text-white top-5 left-5">Recorridos</h3>
                      <p class="absolute text-justify px-5 leading-4 text-sm text-white top-1/2 -translate-y-1/2">Provenza,
-                        Manila y la Calle del Buena Mesa de Envigado se originaron como barrios residenciales. Todos están rodeados de avenidas
+                        Manila y la Calle del Buena Mesa de Envigado se originaron como barrios residenciales. Todos están
+                        rodeados de avenidas
                         principales y centrales, y están ubicados en una zona de habitantes de estrato medio-alto.
                      </p>
                   </div>
@@ -22,8 +22,7 @@
             <swiper-slide>
                <div class="relative">
                   <div class="backdrop-opacity-10 backdrop-invert bg-black/40">
-                     <img class="w-full brightness-50"
-                        src="@/assets/img/integral/parque-prado/2.webp" />
+                     <img class="w-full brightness-50" src="@/assets/img/integral/parque-prado/2.webp" />
                      <h3 class="absolute text-2xl text-white top-5 left-5">Recorridos</h3>
                      <p class="absolute text-justify px-5 leading-4 text-sm text-white top-1/2 -translate-y-1/2">Provenza,
                         Manila y la Calle del Buena
@@ -39,30 +38,36 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                <div class="grid gap-4">
                   <div>
-                     <img class="h-auto max-w-full rounded-lg"
-                        src="@/assets/img/cultural/01-ruta-miranda.webp" alt="">
+                     <router-link :to="{ name: 'miranda' }">
+                        <img class="h-auto max-w-full rounded-lg" src="@/assets/img/cultural/01-ruta-miranda.webp" alt="">
+                     </router-link>
                   </div>
                   <div>
-                     <img class="h-auto max-w-full rounded-lg"
-                        src="@/assets/img/cultural/02-ruta-darien.webp" alt="">
+                     <router-link :to="{ name: 'darien' }">
+                        <img class="h-auto max-w-full rounded-lg" src="@/assets/img/cultural/02-ruta-darien.webp" alt="">
+                     </router-link>
                   </div>
                   <div>
-                     <img class="h-auto max-w-full rounded-lg"
-                        src="@/assets/img/cultural/03-ruta-moore.webp" alt="">
+                     <router-link :to="{ name: 'moore' }">
+                        <img class="h-auto max-w-full rounded-lg" src="@/assets/img/cultural/03-ruta-moore.webp" alt="">
+                     </router-link>
                   </div>
                </div>
                <div class="grid gap-4">
                   <div>
-                     <img class="h-auto max-w-full rounded-lg"
-                        src="@/assets/img/cultural/04-ruta-neiva.webp" alt="">
+                     <router-link :to="{ name: 'neiva' }">
+                        <img class="h-auto max-w-full rounded-lg" src="@/assets/img/cultural/04-ruta-neiva.webp" alt="">
+                     </router-link>
                   </div>
                   <div>
-                     <img class="h-auto max-w-full rounded-lg"
-                        src="@/assets/img/cultural/05-ruta-sucre.webp" alt="">
+                     <router-link :to="{ name: 'sucre' }">
+                        <img class="h-auto max-w-full rounded-lg" src="@/assets/img/cultural/05-ruta-sucre.webp" alt="">
+                     </router-link>
                   </div>
                   <div>
-                     <img class="h-auto max-w-full rounded-lg"
-                        src="@/assets/img/cultural/06-ruta-uraba.webp" alt="">
+                     <router-link :to="{ name: 'uraba' }">
+                        <img class="h-auto max-w-full rounded-lg" src="@/assets/img/cultural/06-ruta-uraba.webp" alt="">
+                     </router-link>
                   </div>
                </div>
             </div>
@@ -139,7 +144,8 @@ const projects = [
 ];
 </script>
 
-<style lang="css" scoped>.swiper {
+<style lang="css" scoped>
+.swiper {
    width: 100%;
 }
 
@@ -150,7 +156,7 @@ const projects = [
 }
 
 .swiper-pagination-bullet {
-	background-color: #ffffff;
-	opacity: 0.5;
+   background-color: #ffffff;
+   opacity: 0.5;
 }
 </style>

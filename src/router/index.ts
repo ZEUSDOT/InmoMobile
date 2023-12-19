@@ -23,6 +23,37 @@ const routes: Array<RouteRecordRaw> = [
     name: 'asmedas',
     component: () => import('@/views/Casas/CasaAsmedas.vue')
   },
+  // Ruta miranda
+  {
+    path: '/ruta-miranda',
+    name: 'miranda',
+    component: () => import('@/views/Rutas/RutaMiranda.vue')
+  },
+  {
+    path: '/ruta-neiva',
+    name: 'neiva',
+    component: () => import('@/views/Rutas/RutaNeiva.vue')
+  },
+  {
+    path: '/ruta-darien',
+    name: 'darien',
+    component: () => import('@/views/Rutas/RutaDarien.vue')
+  },
+  {
+    path: '/ruta-sucre',
+    name: 'sucre',
+    component: () => import('@/views/Rutas/RutaSucre.vue')
+  },
+  {
+    path: '/ruta-moore',
+    name: 'moore',
+    component: () => import('@/views/Rutas/RutaMoore.vue')
+  },
+  {
+    path: '/ruta-uraba',
+    name: 'uraba',
+    component: () => import('@/views/Rutas/RutaUraba.vue')
+  },
   {
     path: '/tabs/',
     component: TabsPage,

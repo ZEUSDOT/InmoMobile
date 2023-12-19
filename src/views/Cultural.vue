@@ -18,13 +18,6 @@
                </div>
             </div>
          </div>
-
-         <!-- <div v-for="(project, index) in projects" :key="index"
-               class="max-w-sm mb-5 bg-white border border-gray-200">
-               <a href="#">
-                  <img class="rounded-lg h-full" :src="getIMGPath(project.image)" alt="" />
-               </a>
-            </div> -->
       </ion-content>
    </ion-page>
 </template>
